@@ -1,8 +1,11 @@
-﻿namespace XlsExport.Interfaces
+﻿using NPOI.HSSF.UserModel;
+
+namespace XlsExport.Interfaces
 {
     interface IExcelWriter
     {
-        void WriteText(string text,int rowIndex,int colIndex);
+        void WriteToFile(HSSFWorkbook sheets, string filePath);
+        void WriteText(string text, int sheetIndex, int rowIndex, int cellIndex);
         void WriteLine();
     }
 }
