@@ -34,25 +34,55 @@ namespace XlsExport.ExtendClass
         /// </summary>
         public string DestinationStation { get; set; }
         /// <summary>
-        /// 列车经过所有
+        /// 列车经过所有车站ID
         /// </summary>
         public List<int> StopsIds { get; set; }
+        /// <summary>
+        /// 列车经过所有区间ID
+        /// </summary>
         public List<int> RunIds { get; set; }
+        /// <summary>
+        /// 车站的打印ID
+        /// </summary>
         public List<int> StationsEids { get; set; }
     }
-
+    /// <summary>
+    /// 车站信息
+    /// </summary>
     public partial class StationInfo
     {
         public StationInfo()
         {
             TrainIds = new List<int>();
         }
-
+        /// <summary>
+        /// 车站打印ID
+        /// </summary>
         public int StationsEid { get; set; }
+        /// <summary>
+        /// 车站名
+        /// </summary>
         public string StationName { get; set; }
+        /// <summary>
+        /// 股道名称
+        /// </summary>
         public string TrackName { get; set; }
+        /// <summary>
+        /// 车站到点
+        /// </summary>
         public string ArrTime { get; set; }
+        /// <summary>
+        /// 车站发点
+        /// </summary>
         public string DepTime { get; set; }
+        /// <summary>
+        /// 经过这个车站的列车Id
+        /// </summary>
         public List<int> TrainIds { get; set; }
     }
+
+    public partial class SectionInfo
+    {
+        
+    } 
 }

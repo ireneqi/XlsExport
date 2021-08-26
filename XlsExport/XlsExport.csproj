@@ -59,9 +59,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-
     <Compile Include="Helpers\ExcelWriter.cs" />
-    <Compile Include="Interfaces\IExcelWriter.cs" />	<Compile Include="ExtendClass\ExportTimeSheets.cs" />    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helpers\FontStyleHelpers.cs" />
+    <Compile Include="Interfaces\IExcelWriter.cs" />
+    <Compile Include="ExtendClass\ExportTimeSheets.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
