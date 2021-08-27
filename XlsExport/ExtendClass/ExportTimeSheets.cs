@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace XlsExport.ExtendClass
 {
     /// <summary>
-    /// 列车信息
+    /// 打印列车信息
     /// </summary>
     public partial class TrainInfo
     {
@@ -47,7 +47,7 @@ namespace XlsExport.ExtendClass
         public List<int> StationsEids { get; set; }
     }
     /// <summary>
-    /// 车站信息
+    /// 打印车站信息
     /// </summary>
     public partial class StationInfo
     {
@@ -80,9 +80,18 @@ namespace XlsExport.ExtendClass
         /// </summary>
         public List<int> TrainIds { get; set; }
     }
-
+    /// <summary>
+    /// 车站区间信息
+    /// </summary>
     public partial class SectionInfo
     {
-        
+        /// <summary>
+        /// 区间距离
+        /// </summary>
+        public string Distance { get; set; }
+        /// <summary>
+        /// 区间运行时分
+        /// </summary>
+        public string RunTime { get; set; }
     } 
 }
